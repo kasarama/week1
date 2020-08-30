@@ -17,9 +17,10 @@ public class EmployeeDTO {
     private static String address;
 
     public EmployeeDTO(Employee employee) {
-        employee.setAddress(this.address);
-        employee.setId(this.id);
-        employee.setName(this.name);
+        this.id=employee.getId();
+        this.address=employee.getAddress();
+        this.name=employee.getName();
+               
     }
     
     
